@@ -23,19 +23,35 @@ h1, h2, h3, h4, h5, h6, p {
 h3 {
     font-size: 24px;
 }
+.p-large {
+    font-size: 30px;
+}
+.p-medium {
+    font-size: 14px;
+}
 p, .p {
     font-size: 12px;
 }
 .p-small {
     font-size: 10px;
 }
+.font-weight-bold {
+    font-weight: 700;
+}
+.color-white {
+    color: #fff;
+}
 a {
     color: #0022FF;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 input,
 label ,
-button {
+button,
+img {
     outline: none;
     border: none;
     width: 100%;
@@ -43,4 +59,7 @@ button {
 }
 button:disabled {
     pointer-events: none;
+}
+ul {
+    list-style-type: none;
 }
