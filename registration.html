@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <img src="./assets/images/logo.png" alt="Логотип" title="Логотип">
+    </div>
+    <div class="header__separator"></div>
+  </header>
+  <main class="main">
+    <form class="form" action="#" method="post">
+      <div class="form__title">
+        <h3>Требуется регистрация</h3>
+      </div>
+      <div class="form__inner">
+        <div class="form__group">
+          <label for="email" class="form__label">
+            <input id="email" class="form__input" type="email" name="email" placeholder="" required />
+            <span class="form__label__placeholder p">E-mail</span>
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="name" class="form__label">
+            <input id="name" class="form__input" type="text" name="name" placeholder="" required />
+            <span class="form__label__placeholder p">Имя</span>
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="surname" class="form__label">
+            <input id="surname" class="form__input" type="text" name="surname" placeholder="" required />
+            <span class="form__label__placeholder p">Фамилия</span>
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="password" class="form__label">
+            <input id="password" class="form__input" type="password" name="password" placeholder="" required />
+            <span class="form__label__placeholder p">Пароль</span>
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="repeat-password" class="form__label">
+            <input id="repeat-password" class="form__input" type="password" name="repeat-password" placeholder="" required />
+            <span class="form__label__placeholder p">Повтор пароля</span>
+          </label>
+        </div>
+        <div class="form__group form__group__remember">
+          <p>Принимаю условия лицензионного <a href="./license.html">соглашения</a></p>
+          <label for="switch" class="form__switch">
+            <input type="checkbox" id="switch" name="license">
+            <span class="form__switch-slider"></span>
+          </label>
+        </div>
+        <div class="form__group">
+          <button class="button" type="submit" disabled>Зарегистрироваться</button>
+          <a class="button" href="./login.html">Есть аккаунт?</a>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="footer"></footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -2,5 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 140px - 12px);
+    min-height: calc(100vh - 140px - 12px);
+    padding: 90px 0 40px;
+}
+@media (max-width: 768px) {
+    .main {
+        padding: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .main {
+        padding: 16px 24px;
+    }
 }

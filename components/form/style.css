@@ -4,16 +4,6 @@
     max-width: 440px;
     width: 100%;
 }
-@media (max-width: 768px) {
-    .form {
-        margin: 0 36px;
-    }
-}
-@media (max-width: 576px) {
-    .form {
-        margin: 0 24px;
-    }
-}
 .form .form__title {
     text-align: center;
     margin-bottom: 40px;
@@ -50,16 +40,28 @@
     width: max-content;
     height: max-content;
     color: #898B8E;
-    transition: transform .3s ease-in;
+    transition: transform .3s ease-in, font-size .3s ease-in;
+}
+.form__input__text-error {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: max-content;
+    color: #CC2C24;
+    transform: translateY(100%);
+    transform-origin: 0 0;
 }
 .form .form__input:focus + .form__label__placeholder,
 .form .form__input:active + .form__label__placeholder,
 .form .form__input:not(:placeholder-shown) + .form__label__placeholder {
-    transform: translate(-4px, -100%) scale(.8);
+    font-size: 10px;
+    transform: translateY(-100%);
 }
 .form__group {
     display: flex;
     flex-direction: column;
+    column-gap: 30px;
     width: 100%;
 }
 .form__group__forgot-password {

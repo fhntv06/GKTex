@@ -1,7 +1,7 @@
 .form__switch {
     position: relative;
-    display: inline-block;
-    width: 36px;
+    min-width: 36px;
+    max-width: 36px;
     height: 14px;
 }
 .form__switch input {
