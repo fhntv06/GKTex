@@ -17,25 +17,18 @@ function validatePassword(password, confirmPassword) {
   return { isValid: true, message: "Пароль принят" };
 }
 
-// Пример вызова при отправке формы
-function handleSubmit(event) {
-  event.preventDefault();
-
-  const result = validatePassword(passwordInput.value, confirmPasswordInput.value);
-
-  if (result.isValid) {
-    console.log("Пароль валиден!");
-    // Отправка формы или другие действия
-  } else {
-    alert(result.message); // Вывод ошибки пользователю
-  }
-}
-
 btnSubmit.addEventListener('click', () => {
   const result = validatePassword(passwordInput.value, confirmPasswordInput.value);
-  console.log(result);
-})
+  const fields = [confirmPasswordInput, passwordInput]
 
+  if (!result.isValid) {
+    fields.forEach((element) => {
+      element.insertAdjacentHTML('beforebegin', `<span class="form__input__text-error p-small">${result.message}</span>`)
+    })
+  } else {
+    Array.from(document.querySelectorAll('.form__input__text-error')).forEach((element) => element.remove())
+  }
+})
 confirmPasswordInput.addEventListener("input", () => {
   const result = validatePassword(confirmPasswordInput.value, passwordInput.value);
   const errorElement = confirmPasswordInput.parentElement.querySelector('.form__input__text-error')
@@ -49,8 +42,6 @@ confirmPasswordInput.addEventListener("input", () => {
   }
 
   btnSubmit.disabled = !result.isValid;
-
-  console.log(result);
 });
 passwordInput.addEventListener("input", () => {
   const result = validatePassword(passwordInput.value, confirmPasswordInput.value);
@@ -65,6 +56,4 @@ passwordInput.addEventListener("input", () => {
   }
 
   btnSubmit.disabled = !result.isValid;
-
-  console.log(result);
 });

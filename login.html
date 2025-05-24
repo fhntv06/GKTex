@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Login page</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -22,13 +24,13 @@
         <div class="form__inner">
           <div class="form__group">
             <label for="email" class="form__label">
-              <input id="email" class="form__input" type="email" name="email" placeholder="" />
+              <input id="email" class="form__input" type="email" name="email" placeholder="" required />
               <span class="form__label__placeholder p">E-mail</span>
             </label>
           </div>
           <div class="form__group">
             <label for="password" class="form__label">
-              <input id="password" class="form__input" type="password" name="password" placeholder="" />
+              <input id="password" class="form__input" type="password" name="password" placeholder="" required />
               <span class="form__label__placeholder p">Пароль</span>
             </label>
             <p class="form__group__forgot-password p-small"><a href="./forgot-password.html">Забыли пароль?</a></p>
@@ -36,7 +38,7 @@
           <div class="form__group form__group__remember">
             <p>Запомнить меня?</p>
             <label for="switch" class="form__switch">
-              <input type="checkbox" id="switch" name="remember-me">
+              <input type="checkbox" id="switch" name="remember-me" />
               <span class="form__switch-slider"></span>
             </label>
           </div>
@@ -48,5 +50,7 @@
       </form>
   </main>
   <footer class="footer"></footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
