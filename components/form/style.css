@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .form {
+        margin: 0 36px;
+    }
+}
+@media (max-width: 576px) {
+    .form {
+        margin: 0 24px;
+    }
+}
+.form .form__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form .form__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    width: 100%;
+    padding: 64px 112px;
+    background-color: #CAD0D880;
+    box-shadow: 0 4px 55px 0 #0000001A;
+}
+@media (max-width: 768px) {
+    .form .form__inner {
+        padding: 32px 56px;
+    }
+}
+@media (max-width: 576px) {
+    .form .form__inner {
+        padding: 16px 28px;
+    }
+}
+.form .form__label {
+    position: relative;
+    border-bottom: 1px solid #949CA6;
+    padding-bottom: 8px;
+}
+.form__label__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: max-content;
+    color: #898B8E;
+    transition: transform .3s ease-in;
+}
+.form .form__input:focus + .form__label__placeholder,
+.form .form__input:active + .form__label__placeholder,
+.form .form__input:not(:placeholder-shown) + .form__label__placeholder {
+    transform: translate(-4px, -100%) scale(.8);
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form__group__forgot-password {
+    align-self: flex-end;
+    margin-top: 8px;
+}
+.form__group.form__group__remember {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
