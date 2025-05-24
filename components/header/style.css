@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    height: 140px;
+    background-color: #1A2B3C;
+}
+.header__separator {
+    height: 12px;
+    background-color: #CC2C24;
+    box-shadow: 0 4px 4px 0 #00000040;
+}
