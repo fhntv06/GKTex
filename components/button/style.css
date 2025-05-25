@@ -6,6 +6,15 @@
     box-shadow: 0 4px 15px 0 #00000040;
     cursor: pointer;
 }
-.button + .button {
-    margin-top: 12px;
+.button.green {
+    background-color: #60A917;
+}
+.button.blue {
+    background-color: #0050EF;
+}
+.button.yellow {
+    background-color: #E4C900;
+}
+.button.violet {
+    background-color: #76608A;
 }

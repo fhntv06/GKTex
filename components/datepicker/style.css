@@ -1,0 +1,50 @@
+#datapicker .datepicker {
+    padding: 20px;
+}
+#datapicker .datepicker-controls button {
+    color: #ffffff;
+    cursor: pointer;
+}
+#datapicker .datepicker-controls button svg {
+    fill: white;
+}
+#datapicker .datepicker,
+#datapicker .datepicker-picker {
+    background-color: #1A2B3C;
+}
+#datapicker .selected {
+    border-radius: 50%;
+}
+#datapicker .day {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+#datapicker .day:hover,
+#datapicker .focused {
+    border-radius: 50%;
+}
+#datapicker .range-start,
+#datapicker .day.range-start:hover {
+    border-radius: 50% 0 0 50%;
+}
+#datapicker .range-end,
+#datapicker .day.range-end:hover{
+    border-radius: 0 50% 50% 0;
+}
+
+#datapicker .day.range:hover {
+    border-radius: 0;
+}
+#datapicker .selected,
+#datapicker .day:hover,
+#datapicker .range,
+#datapicker .range-start,
+#datapicker .range-end,
+#datapicker .focused {
+    background-color: #2B5278;
+}
+#datapicker .disable {
+    color: #2F3E4D;
+    pointer-events: none;
+}

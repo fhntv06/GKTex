@@ -1,11 +1,14 @@
 @import "./avatar/style.css";
 @import "./button/style.css";
 @import "./cards/style.css";
+@import "./datepicker/style.css";
 @import "./footer/style.css";
 @import "./form/style.css";
 @import "./header/style.css";
 @import "./main/style.css";
+@import "./select/style.css";
 @import "./social-list/style.css";
 @import "./switch/style.css";
 @import "./tabs/style.css";
 @import "./themes/style.css";
+@import "./trends/style.css";

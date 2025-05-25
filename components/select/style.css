@@ -1,0 +1,71 @@
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    min-width: 150px;
+    padding: 12px 16px;
+    column-gap: 48px;
+    border-radius: 0;
+    background-color: #1A2B3C;
+}
+@media (max-width: 768px) {
+    .select {
+        width: 100%;
+    }
+}
+.select--open .arrow {
+    transform: rotateZ(180deg);
+    transition: transform .15s ease-out;
+}
+.select__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+.select__value #period-start {
+    text-align: right;
+}
+.select .arrow {
+    min-width: 15px;
+    min-height: 15px;
+    transition: transform .3s ease-in;
+}
+select,
+::picker(select) {
+    appearance: base-select;
+}
+select::picker-icon {
+    color: #fff;
+    transition: .4s rotate;
+}
+select:open::picker-icon {
+    rotate: 180deg;
+}
+::picker(select) {
+    border: none;
+}
+option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A2B3C;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    transition: .4s;
+    cursor: pointer;
+}
+option span {
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+option:hover span,
+option:focus span {
+    background-color: #2B5278;
+}
+option::checkmark {
+    order: 1;
+    content: "";
+}
