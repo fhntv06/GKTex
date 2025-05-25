@@ -12,15 +12,6 @@
         padding: 24px;
     }
 }
-.inner-page .header .header__content {
-    justify-content: space-between;
-    padding: 0 48px;
-}
-@media (max-width: 768px) {
-    .inner-page .header .header__content {
-        padding: 0 24px;
-    }
-}
 .wrapper {
     max-width: 1280px;
     width: 100%;

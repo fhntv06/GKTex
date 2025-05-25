@@ -35,6 +35,7 @@
         text-align: center;
     }
 }
-.tab--active {
+.tab--active,
+.tab-link:hover {
     background-color: #FFFFFF33;
 }
