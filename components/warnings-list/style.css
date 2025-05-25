@@ -1,0 +1,30 @@
+.warnings-list {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    row-gap: 24px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 210px;
+    height: 100%;
+    background-color: #1A2B3C;
+    overflow-y: scroll;
+}
+@media (max-width: 576px) {
+    .warnings-list {
+        min-width: 100%;
+    }
+}
+.warnings-list__item {
+    padding: 12px;
+    text-align: center;
+}
+.warnings-list__item.bg-yellow {
+    background-color: #FFFF66;
+}
+.warnings-list__item.bg-gray {
+    background-color: #B3B3B3;
+}
+.warnings-list__item.bg-red {
+    background-color: #E51400;
+}
