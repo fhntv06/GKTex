@@ -26,3 +26,11 @@
         padding: 32px 16px 40px;
     }
 }
+.arrow__back {
+    display: block;
+}
+@media (max-width: 768px) {
+    .arrow__back {
+        display: none;
+    }
+}

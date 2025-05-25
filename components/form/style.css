@@ -81,12 +81,10 @@
 }
 .form__search {
     width: 210px;
-    margin-bottom: 52px;
 }
 @media (max-width: 576px) {
     .form__search {
         width: 100%;
-        margin-bottom: 24px;
     }
 }
 .form__avatar {
