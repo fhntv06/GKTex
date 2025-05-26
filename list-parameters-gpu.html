@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Параметры</title>
+  <title>Список параметров ГПУ</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -57,48 +57,86 @@
   <main class="main">
     <div class="wrapper">
       <div class="container">
-        <p class="container__title font-weight-bold p-big">Генератор N</p>
         <div class="container__item">
-          <div class="params-list">
-            <div class="params-list__item">
-              <p class="color-white p-medium">Активная</p>
-              <p class="color-white p-medium">298.7kW (101.4/102.4/94.9)</p>
+          <p class="font-weight-bold p-big">Датчики</p>
+          <div class="sensors">
+            <div class="sensor">
+              <div class="sensor__indicator">
+                <img src="assets/images/sensor__indicator_1.png" alt="sensor indicator" title="sensor indicator">
+                <svg class="sensor__indicator__arrow" style="transform: rotateZ(223deg)" width="21" height="51" viewBox="0 0 21 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5046 20.9831C4.98179 20.9831 0.504639 16.4474 0.504639 10.8524C0.504639 5.25736 4.98179 0.72168 10.5046 0.72168C16.0275 0.72168 20.5046 5.25736 20.5046 10.8524C20.5046 16.4474 16.0275 20.9831 10.5046 20.9831Z" fill="#B50E0B"/>
+                  <path d="M0.504639 10.8524L20.5046 10.8524L10.5046 50.7217L0.504639 10.8524Z" fill="#B50E0B"/>
+                </svg>
+              </div>
+              <p class="color-white">530 кВт</p>
             </div>
-            <div class="params-list__item">
-              <p class="color-white p-medium">Реактивная</p>
-              <p class="color-white p-medium">63kVAr (17.2/18.7/20.2)</p>
-            </div>
-            <div class="params-list__item">
-              <p class="color-white p-medium">Полная</p>
-              <p class="color-white p-medium">306.3kVA (104.2/104.5/97.6)</p>
+            <div class="sensor">
+              <div class="sensor__indicator">
+                <img src="assets/images/sensor__indicator_1.png" alt="sensor indicator" title="sensor indicator">
+                <svg class="sensor__indicator__arrow" style="transform: rotateZ(43deg)" width="21" height="51" viewBox="0 0 21 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5046 20.9831C4.98179 20.9831 0.504639 16.4474 0.504639 10.8524C0.504639 5.25736 4.98179 0.72168 10.5046 0.72168C16.0275 0.72168 20.5046 5.25736 20.5046 10.8524C20.5046 16.4474 16.0275 20.9831 10.5046 20.9831Z" fill="#B50E0B"/>
+                  <path d="M0.504639 10.8524L20.5046 10.8524L10.5046 50.7217L0.504639 10.8524Z" fill="#B50E0B"/>
+                </svg>
+              </div>
+              <p class="color-white">1500 RPM</p>
             </div>
           </div>
         </div>
         <div class="container__item">
-          <div class="params-list">
-            <div class="params-list__item">
-              <p class="color-white p-medium">Ток</p>
-              <p class="color-white p-medium">460A 469A 437A</p>
-            </div>
-            <div class="params-list__item">
-              <p class="color-white p-medium">Частота</p>
-              <p class="color-white p-medium">50Hz</p>
-            </div>
-            <div class="params-list__item">
-              <p class="color-white p-medium">Полная</p>
-              <p class="color-white p-medium">306.3kVA (104.2/104.5/97.6)</p>
-            </div>
+          <p class="font-weight-bold p-big">Список уведомлений</p>
+          <div class="warnings-list">
+            <p class="warnings-list__item bg-yellow">Exh B Low</p>
+            <p class="warnings-list__item bg-gray">AS901 Vibratio</p>
+            <p class="warnings-list__item bg-red">BOC ShortCurr</p>
+            <p class="warnings-list__item bg-yellow">Exh B Low</p>
+            <p class="warnings-list__item bg-gray">AS901 Vibratio</p>
+            <p class="warnings-list__item bg-red">BOC ShortCurr</p>
           </div>
+        </div>
       </div>
-        <div class="container__item container__item--full">
+      <div class="container">
+        <div class="container__item">
+          <p class="font-weight-bold p-big">Параметры работы</p>
           <div class="params-list">
+            <div class="params-list__item">
+              <p class="color-white p-medium">Статус</p>
+              <p class="color-white p-medium">В работе</p>
+            </div>
+            <div class="params-list__item">
+              <p class="color-white p-medium">Мощность</p>
+              <p class="color-white p-medium">100 ч</p>
+            </div>
+            <div class="params-list__item">
+              <p class="color-white p-medium">Наработка</p>
+              <p class="color-white p-medium">50000 кВт/ч</p>
+            </div>
+            <div class="params-list__item">
+              <p class="color-white p-medium">Выработано</p>
+              <p class="color-white p-medium">50 кВт</p>
+            </div>
             <div class="params-list__item">
               <p class="color-white p-medium">Параметр N</p>
-              <p class="color-white p-medium">460A 469A 437A</p>
+              <p class="color-white p-medium">0 ед. изм</p>
             </div>
-            <div class="params-list__item">
-              <p class="color-white p-medium">Параметр N+1</p>
-              <p class="color-white p-medium">50Hz</p>
+          </div>
+        </div>
+        <div class="container__item">
+          <p class="font-weight-bold p-big">Больше параметров</p>
+          <div class="params-list">
+            <div class="params-list__item" data-popup data-param-name="Генератор" data-param-value="100 ч">
+              <p class="color-white p-medium">Генератор</p>
+            </div>
+            <div class="params-list__item" data-popup data-param-name="Двигатель" data-param-value="200 ч">
+              <p class="color-white p-medium">Двигатель</p>
+            </div>
+            <div class="params-list__item" data-popup data-param-name="Сеть" data-param-value="Активна">
+              <p class="color-white p-medium">Сеть</p>
+            </div>
+            <div class="params-list__item" data-popup data-param-name="Шина" data-param-value="Активна">
+              <p class="color-white p-medium">Шина</p>
+            </div>
+            <div class="params-list__item" data-popup data-param-name="Параметр N" data-param-value="0">
+              <p class="color-white p-medium">Параметр N</p>
             </div>
           </div>
         </div>
