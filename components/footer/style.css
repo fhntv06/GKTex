@@ -1,13 +1,16 @@
 .footer {
+    z-index: 1;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1A2B3C;
+    margin-top: auto;
     min-height: 90px;
+    background-color: #1A2B3C;
 }
 @media (max-width: 768px) {
     .footer {
-        height: 90px;
+        min-height: 90px;
     }
 }
 .footer__content {
@@ -18,7 +21,22 @@
 }
 @media (max-width: 768px) {
     .footer__content {
-        display: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+    }
+    .footer__content__item {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 576px) {
+    .footer__content__item {
+        grid-column: span 3;
+    }
+}
+@media (max-width: 425px) {
+    .footer__content__item {
+        grid-column: 1/-1;
     }
 }
 .footer__content__item {

@@ -2,12 +2,19 @@
     display: flex;
     height: 100%;
 }
+.footer__tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: none;
+    justify-content: center;
+    background-color: #1A2B3C;
+}
 @media (min-width: 768px) {
     .header__tabs .tab {
         width: 140px;
-    }
-    .footer__tabs {
-        display: none;
     }
 }
 @media (max-width: 768px) {
@@ -16,6 +23,8 @@
     }
     .footer__tabs {
         display: flex;
+        position: sticky;
+        bottom: 0;
     }
 }
 .tab {
