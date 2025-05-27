@@ -1,3 +1,97 @@
-.dark-theme body {
+/* COMMON */
+body.dark-theme {
+    background-color: #0F120E;
+    color: #fff;
+}
+.dark-theme a {
+    color: #3E8DD9;
+}
 
+/* FORM */
+.dark-theme .form .form__inner {
+    background-color: #1A1D1A;
+}
+.dark-theme .form .form__label__placeholder {
+    color: #fff;
+    opacity: .4;
+}
+.dark-theme .form .form__label {
+    border-bottom-color: rgb(255,255,255,40%);
+}
+.dark-theme .form .form__switch-slider {
+    box-shadow: 0 4px 55px 0 #ffffff40 inset;
+}
+.dark-theme .form input:checked + .form__switch-slider {
+    background-color: #3A7FC1;
+    box-shadow: unset;
+}
+
+
+/* BUTTON */
+.dark-theme .button {
+    background-color: #3A7FC1;
+}
+.dark-theme a.button {
+    color: #fff;
+}
+
+/* INPUT */
+.dark-theme input {
+    color: #fff;
+}
+
+/* CARDS COMPLEX */
+.dark-theme .cards .card {
+    background-color: #000;
+    box-shadow: 0 4px 55px 0 #ffffff26;
+}
+.dark-theme .cards .card p {
+    color: #fff;
+}
+
+/* SELECT */
+.dark-theme .select {
+    background-color: #3A7FC1;
+}
+
+/* ARROW BACK */
+.dark-theme .arrow__back svg path {
+    stroke: #fff;
+}
+
+/* CONTAINER */
+.dark-theme .container {
+    background-color: #000;
+    box-shadow: 0 4px 55px 0 rgb(255 255 255 / 15%);
+}
+
+/* SENSORS */
+.dark-theme .sensors .sensor {
+    background-color: #313531;
+}
+
+/* WARNING LIST */
+.dark-theme .warnings-list {
+    background-color: #313531;
+}
+.dark-theme .warnings-list__item {
+    color: #1A2B3C;
+}
+
+/* PARAMS LIST */
+.dark-theme .params-list {
+    background-color: #313531;
+}
+.dark-theme .params-list__item {
+    background-color: rgb(243, 243, 243, 15%);
+}
+
+/* POPUP PARAM */
+.dark-theme .popup-param .popup-param__content__value {
+    color: #1A2B3C;
+}
+
+/* FOOTER */
+.dark-theme footer a {
+    color: #fff;
 }
