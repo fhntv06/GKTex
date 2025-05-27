@@ -24,7 +24,7 @@
     .footer__tabs {
         display: flex;
         position: sticky;
-        bottom: 0;
+        bottom: -40px;
     }
 }
 .tab {
