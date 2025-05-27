@@ -7,6 +7,7 @@
 @import "./header/style.css";
 @import "./params-list/style.css";
 @import "./popup-param/style.css";
+@import "./preloader/style.css";
 @import "./main/style.css";
 @import "./sensors/style.css";
 @import "./select/style.css";

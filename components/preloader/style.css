@@ -1,0 +1,44 @@
+body .header,
+body .header__separator,
+body .main,
+body .footer__tabs,
+body .footer {
+    opacity: 0;
+}
+body.loaded .header,
+body.loaded .header__separator,
+body.loaded .main,
+body.loaded .footer__tabs,
+body.loaded .footer,
+.preloader {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.preloader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preloader.preloader--unvisible {
+    opacity: 0;
+}
+.preloader .preloader__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+}
+.preloader .preloader-rotate {
+    animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
